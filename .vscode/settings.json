@@ -1,0 +1,12 @@
+{
+    "workbench.startupEditor": "none",
+    "dart.cliConsole": "terminal",
+    "editor.codeLens": false,
+    "dart.showMainCodeLens": false,
+    "dart.showTestCodeLens": false,
+    "debug.toolBarLocation": "hidden",
+    "chat.tools.terminal.autoApprove": {
+        "flutter": true,
+        "dart": true
+    },
+}
