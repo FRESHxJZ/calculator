@@ -32,13 +32,14 @@ class CalculatorPage extends StatefulWidget {
 }
 
 class _CalculatorPageState extends State<CalculatorPage> {
-  static const _operators = {'+', '-', '*', '/'};
+  static const _operators = {'+', '-', '*', '/', '%'};
   static const _buttons = [
-    ['C', '/', '*', '-'],
-    ['7', '8', '9', '+'],
-    ['4', '5', '6', '='],
-    ['1', '2', '3', '0'],
-  ];
+  ['C', '/', '*', '-'],
+  ['7', '8', '9', '+'],
+  ['4', '5', '6', '%'],
+  ['1', '2', '3', '='],
+  ['0'],
+];
 
   String _expression = '';
   String? _error;
@@ -141,7 +142,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                             crossAxisCount: 4,
                             crossAxisSpacing: 12,
                             mainAxisSpacing: 12,
-                            childAspectRatio: 1.35,
+                            childAspectRatio: 2,
                           ),
                       itemBuilder: (context, index) {
                         final value = buttonValues[index];
